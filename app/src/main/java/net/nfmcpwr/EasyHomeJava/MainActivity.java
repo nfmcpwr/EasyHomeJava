@@ -7,12 +7,10 @@ import android.graphics.Color;
 import android.net.Uri;
 import android.os.Bundle;
 
-import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.view.View;
 import android.widget.Button;
-import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity
 {
@@ -72,19 +70,5 @@ public class MainActivity extends AppCompatActivity
         callButton2.setBackgroundColor(Color.parseColor(ConfigStore.Config.Button2Color));
         callButton2.setText(ConfigStore.Config.Button2Text);
         callButton2.setOnClickListener(onclick);
-    }
-
-    @Override
-    public void onRequestPermissionsResult(int requestCode, @NonNull String[] permissions, @NonNull int[] grantResults, int deviceId)
-    {
-        super.onRequestPermissionsResult(requestCode, permissions, grantResults, deviceId);
-
-        if (requestCode == 114514)
-        {
-            if (grantResults[0] == PackageManager.PERMISSION_DENIED)
-            {
-                Toast.makeText(this, permissions[0] + " is not granted", Toast.LENGTH_SHORT).show();
-            }
-        }
     }
 }

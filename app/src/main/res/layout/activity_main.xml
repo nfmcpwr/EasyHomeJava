@@ -6,11 +6,16 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:fitsSystemWindows="true"
+    android:textAlignment="center"
+    android:textDirection="ltr"
     tools:context=".MainActivity">
 
     <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout"
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="match_parent"
+        app:layout_anchor="@+id/constraintLayout"
+        app:layout_anchorGravity="center">
 
         <Button
             android:id="@+id/callButton1"
@@ -32,7 +37,7 @@
             android:id="@+id/callButton2"
             android:layout_width="400dp"
             android:layout_height="225dp"
-            android:layout_marginTop="16dp"
+            android:layout_marginTop="48dp"
             android:text="Button"
             android:textSize="50sp"
             app:cornerRadius="15dp"
@@ -42,6 +47,35 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/callButton1" />
+
+        <TextClock
+            android:id="@+id/textClock"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="80dp"
+            android:format12Hour="hh:mm"
+            android:format24Hour="HH:mm"
+            android:textAlignment="center"
+            android:textDirection="ltr"
+            android:textSize="120sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/callButton2" />
+
+        <TextClock
+            android:id="@+id/textClock2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:format12Hour="MM 月 dd 日 (EEE)"
+            android:format24Hour="MM 月 dd 日 (EEE)"
+            android:textAlignment="center"
+            android:textDirection="ltr"
+            android:textSize="60sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textClock" />
+
     </androidx.constraintlayout.widget.ConstraintLayout>
 
 </androidx.coordinatorlayout.widget.CoordinatorLayout>
