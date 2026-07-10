@@ -64,11 +64,13 @@ public class MainActivity extends AppCompatActivity
         Button callButton1 = findViewById(R.id.callButton1);
         callButton1.setBackgroundColor(Color.parseColor(ConfigStore.Config.Button1Color));
         callButton1.setText(ConfigStore.Config.Button1Text);
+        callButton1.setTextColor(Color.parseColor(ConfigStore.Config.Button1TextColor));
         callButton1.setOnClickListener(onclick);
 
         Button callButton2 = findViewById(R.id.callButton2);
         callButton2.setBackgroundColor(Color.parseColor(ConfigStore.Config.Button2Color));
         callButton2.setText(ConfigStore.Config.Button2Text);
+        callButton2.setTextColor(Color.parseColor(ConfigStore.Config.Button2TextColor));
         callButton2.setOnClickListener(onclick);
     }
 }

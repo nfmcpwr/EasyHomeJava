@@ -23,10 +23,12 @@ public class Config
     public String Button1Text;
     @JsonProperty("Button1BackgroundColor")
     public String Button1Color;
+    public String Button1TextColor;
     public String Button1TelNumber;
     public String Button2Text;
     @JsonProperty("Button2BackgroundColor")
     public String Button2Color;
+    public String Button2TextColor;
     public String Button2TelNumber;
 
     public Config()
