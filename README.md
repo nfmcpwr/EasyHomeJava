@@ -25,9 +25,11 @@ C#で作成した EasyHome のJava版です
 |---|---|---|
 | `Button1Text` | ボタン1(上) に表示されるテキスト | 文字列 |
 | `Button1BackgroundColor` | ボタン1(上) の背景色 | [`Color.parseColor()`](https://developer.android.com/reference/android/graphics/Color#parseColor(java.lang.String)) で変換可能な色を示す文字列 <br> 例: `#AC99EA`, `#FFAC99EA`, `red` |
+| `Button1TextColor` | ボタン1(上) の文字色 | [`Color.parseColor()`](https://developer.android.com/reference/android/graphics/Color#parseColor(java.lang.String)) で変換可能な色を示す文字列 <br> 例: `#000000`, `#FF000000`, `black` |
 | `Button1TelNumber` | ボタン1(上) クリック時に発信する電話番号 | 数字のみ(`[0-9]`)で構成された文字列 |
 | `Button2Text` | ボタン2(下) に表示されるテキスト | 文字列 |
 | `Button2BackgroundColor` | ボタン2(下) の背景色 | [`Color.parseColor()`](https://developer.android.com/reference/android/graphics/Color#parseColor(java.lang.String)) で変換可能な色を示す文字列 <br> 例: `#AC99EA`, `#FFAC99EA`, `red` |
+| `Button2TextColor` | ボタン2(下) の文字色 | [`Color.parseColor()`](https://developer.android.com/reference/android/graphics/Color#parseColor(java.lang.String)) で変換可能な色を示す文字列 <br> 例: `#000000`, `#FF000000`, `black` |
 | `Button2TelNumber` | ボタン2(下) クリック時に発信する電話番号 | 数字のみ(`[0-9]`)で構成された文字列 |
 
 ## ライセンス
